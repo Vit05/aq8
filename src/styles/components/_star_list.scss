@@ -1,0 +1,52 @@
+:root {
+  --star-color: #{rgba(red, 0.2)};
+  --star-active-color: #{red};
+}
+
+.star_list {
+  display: flex;
+  color: var(--star-active-color);
+  align-self: center;
+
+  li {
+    margin: 0 2px;
+  }
+
+  .icm {
+    &:before {
+      font-size: $base_fs;
+    }
+  }
+
+  &.star_0 {
+    li:nth-of-type(n + 1) {
+      color: var(--star-color);
+    }
+  } &.star_1 {
+      li:nth-of-type(n + 2) {
+        color: var(--star-color);
+      }
+    }
+
+  &.star_2 {
+    li:nth-of-type(n + 3) {
+      color: var(--star-color);
+    }
+  }
+
+  &.star_3 {
+    li:nth-of-type(n + 4) {
+      color: var(--star-color);
+    }
+  }
+
+  &.star_4 {
+    li:nth-of-type(n + 5) {
+      color: var(--star-color);
+    }
+  }
+
+  &.star_5 {
+    color: var(--star-active-color);
+  }
+}

@@ -1,0 +1,482 @@
+
+$icon__number: "\e91c";
+$icon__number1: "\e91d";
+$icon__number2: "\e91e";
+$icon__number3: "\e91f";
+$icon__number4: "\e920";
+$icon__number5: "\e921";
+$icon__number6: "\e922";
+$icon__number7: "\e923";
+$icon__number8: "\e924";
+$icon__star: "\e901";
+$icon__user: "\e902";
+$icon__settings: "\e903";
+$icon__bulb: "\e904";
+$icon__diamond: "\e905";
+$icon__location: "\e906";
+$icon__eye: "\e907";
+$icon__bubble: "\e908";
+$icon__clock: "\e909";
+$icon__paperplane: "\e90a";
+$icon__study: "\e90b";
+$icon__food: "\e90c";
+$icon__fire: "\e90d";
+$icon__clip: "\e90e";
+$icon__world: "\e90f";
+$icon__picture: "\e00f";
+$icon__pictures: "\e010";
+$icon__camera: "\e012";
+$icon__wallet: "\e016";
+$icon__gift: "\e017";
+$icon__bargraph: "\e018";
+$icon__grid: "\e019";
+$icon__expand: "\e01a";
+$icon__focus: "\e01b";
+$icon__hourglass: "\e01f";
+$icon__lock: "\e020";
+$icon__megaphone: "\e021";
+$icon__shield: "\e022";
+$icon__trophy: "\e023";
+$icon__flag: "\e024";
+$icon__map: "\e025";
+$icon__puzzle: "\e026";
+$icon__basket: "\e027";
+$icon__envelope: "\e028";
+$icon__streetsign: "\e029";
+$icon__gears: "\e02b";
+$icon__lightbulb: "\e030";
+$icon__layers: "\e031";
+$icon__pencil: "\e032";
+$icon__linegraph: "\e039";
+$icon__recycle: "\e03e";
+$icon__profile-male: "\e040";
+$icon__profile-female: "\e041";
+$icon__globe: "\e045";
+$icon__map-pin: "\e047";
+$icon__chat: "\e049";
+$icon__cloud: "\e04b";
+$icon__target: "\e04e";
+$icon__piechart: "\e050";
+$icon__global: "\e052";
+$icon__compass: "\e053";
+$icon__lifesaver: "\e054";
+$icon__clock1: "\e055";
+$icon__refresh: "\e05a";
+$icon__phone-outgoing: "\e91a";
+$icon__phone: "\e91b";
+$icon__gmail: "\e910";
+$icon__instagram: "\e911";
+$icon__skype: "\e912";
+$icon__telegram: "\e913";
+$icon__twitter: "\e914";
+$icon__viber: "\e915";
+$icon__whatsapp: "\e916";
+$icon__youtube: "\e917";
+$icon__zeit: "\e918";
+$icon__arrow_down: "\e900";
+$icon__phone1: "\e919";
+
+
+
+.icm:before {
+  font-family: $fontIcomoon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon__number {
+  &:before {
+    content: $icon__number;
+  }
+}
+.icon__number1 {
+  &:before {
+    content: $icon__number1;
+  }
+}
+.icon__number2 {
+  &:before {
+    content: $icon__number2;
+  }
+}
+.icon__number3 {
+  &:before {
+    content: $icon__number3;
+  }
+}
+.icon__number4 {
+  &:before {
+    content: $icon__number4;
+  }
+}
+.icon__number5 {
+  &:before {
+    content: $icon__number5;
+  }
+}
+.icon__number6 {
+  &:before {
+    content: $icon__number6;
+  }
+}
+.icon__number7 {
+  &:before {
+    content: $icon__number7;
+  }
+}
+.icon__number8 {
+  &:before {
+    content: $icon__number8;
+  }
+}
+.icon__star {
+  &:before {
+    content: $icon__star;
+  }
+}
+.icon__user {
+  &:before {
+    content: $icon__user;
+  }
+}
+.icon__settings {
+  &:before {
+    content: $icon__settings;
+  }
+}
+.icon__bulb {
+  &:before {
+    content: $icon__bulb;
+  }
+}
+.icon__diamond {
+  &:before {
+    content: $icon__diamond;
+  }
+}
+.icon__location {
+  &:before {
+    content: $icon__location;
+  }
+}
+.icon__eye {
+  &:before {
+    content: $icon__eye;
+  }
+}
+.icon__bubble {
+  &:before {
+    content: $icon__bubble;
+  }
+}
+.icon__clock {
+  &:before {
+    content: $icon__clock;
+  }
+}
+.icon__paperplane {
+  &:before {
+    content: $icon__paperplane;
+  }
+}
+.icon__study {
+  &:before {
+    content: $icon__study;
+  }
+}
+.icon__food {
+  &:before {
+    content: $icon__food;
+  }
+}
+.icon__fire {
+  &:before {
+    content: $icon__fire;
+  }
+}
+.icon__clip {
+  &:before {
+    content: $icon__clip;
+  }
+}
+.icon__world {
+  &:before {
+    content: $icon__world;
+  }
+}
+.icon__picture {
+  &:before {
+    content: $icon__picture;
+  }
+}
+.icon__pictures {
+  &:before {
+    content: $icon__pictures;
+  }
+}
+.icon__camera {
+  &:before {
+    content: $icon__camera;
+  }
+}
+.icon__wallet {
+  &:before {
+    content: $icon__wallet;
+  }
+}
+.icon__gift {
+  &:before {
+    content: $icon__gift;
+  }
+}
+.icon__bargraph {
+  &:before {
+    content: $icon__bargraph;
+  }
+}
+.icon__grid {
+  &:before {
+    content: $icon__grid;
+  }
+}
+.icon__expand {
+  &:before {
+    content: $icon__expand;
+  }
+}
+.icon__focus {
+  &:before {
+    content: $icon__focus;
+  }
+}
+.icon__hourglass {
+  &:before {
+    content: $icon__hourglass;
+  }
+}
+.icon__lock {
+  &:before {
+    content: $icon__lock;
+  }
+}
+.icon__megaphone {
+  &:before {
+    content: $icon__megaphone;
+  }
+}
+.icon__shield {
+  &:before {
+    content: $icon__shield;
+  }
+}
+.icon__trophy {
+  &:before {
+    content: $icon__trophy;
+  }
+}
+.icon__flag {
+  &:before {
+    content: $icon__flag;
+  }
+}
+.icon__map {
+  &:before {
+    content: $icon__map;
+  }
+}
+.icon__puzzle {
+  &:before {
+    content: $icon__puzzle;
+  }
+}
+.icon__basket {
+  &:before {
+    content: $icon__basket;
+  }
+}
+.icon__envelope {
+  &:before {
+    content: $icon__envelope;
+  }
+}
+.icon__streetsign {
+  &:before {
+    content: $icon__streetsign;
+  }
+}
+.icon__gears {
+  &:before {
+    content: $icon__gears;
+  }
+}
+.icon__lightbulb {
+  &:before {
+    content: $icon__lightbulb;
+  }
+}
+.icon__layers {
+  &:before {
+    content: $icon__layers;
+  }
+}
+.icon__pencil {
+  &:before {
+    content: $icon__pencil;
+  }
+}
+.icon__linegraph {
+  &:before {
+    content: $icon__linegraph;
+  }
+}
+.icon__recycle {
+  &:before {
+    content: $icon__recycle;
+  }
+}
+.icon__profile-male {
+  &:before {
+    content: $icon__profile-male;
+  }
+}
+.icon__profile-female {
+  &:before {
+    content: $icon__profile-female;
+  }
+}
+.icon__globe {
+  &:before {
+    content: $icon__globe;
+  }
+}
+.icon__map-pin {
+  &:before {
+    content: $icon__map-pin;
+  }
+}
+.icon__chat {
+  &:before {
+    content: $icon__chat;
+  }
+}
+.icon__cloud {
+  &:before {
+    content: $icon__cloud;
+  }
+}
+.icon__target {
+  &:before {
+    content: $icon__target;
+  }
+}
+.icon__piechart {
+  &:before {
+    content: $icon__piechart;
+  }
+}
+.icon__global {
+  &:before {
+    content: $icon__global;
+  }
+}
+.icon__compass {
+  &:before {
+    content: $icon__compass;
+  }
+}
+.icon__lifesaver {
+  &:before {
+    content: $icon__lifesaver;
+  }
+}
+.icon__clock1 {
+  &:before {
+    content: $icon__clock1;
+  }
+}
+.icon__refresh {
+  &:before {
+    content: $icon__refresh;
+  }
+}
+.icon__phone-outgoing {
+  &:before {
+    content: $icon__phone-outgoing;
+  }
+}
+.icon__phone {
+  &:before {
+    content: $icon__phone;
+  }
+}
+.icon__gmail {
+  &:before {
+    content: $icon__gmail;
+    color: #d14836;
+  }
+}
+.icon__instagram {
+  &:before {
+    content: $icon__instagram;
+    color: #e4405f;
+  }
+}
+.icon__skype {
+  &:before {
+    content: $icon__skype;
+    color: #00aff0;
+  }
+}
+.icon__telegram {
+  &:before {
+    content: $icon__telegram;
+    color: #2ca5e0;
+  }
+}
+.icon__twitter {
+  &:before {
+    content: $icon__twitter;
+    color: #1da1f2;
+  }
+}
+.icon__viber {
+  &:before {
+    content: $icon__viber;
+    color: #665cac;
+  }
+}
+.icon__whatsapp {
+  &:before {
+    content: $icon__whatsapp;
+    color: #25d366;
+  }
+}
+.icon__youtube {
+  &:before {
+    content: $icon__youtube;
+    color: #f00;
+  }
+}
+.icon__zeit {
+  &:before {
+    content: $icon__zeit;
+  }
+}
+.icon__arrow_down {
+  &:before {
+    content: $icon__arrow_down;
+  }
+}
+.icon__phone1 {
+  &:before {
+    content: $icon__phone1;
+  }
+}

@@ -1,0 +1,185 @@
+
+.header {
+  background-color: $color_01;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_logo {
+    font-size: $md_fs;
+    color: $color_05;
+    font-weight: $fontBold;
+  }
+
+  .header_nav {
+
+  }
+
+  .navigation {
+    display: flex;
+
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    a {
+      color: $color_05;
+      display: block;
+      padding: 10px 0;
+      @include trans();
+      position: relative;
+
+      &:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 0;
+        @include trans();
+        background-color: $color_02;
+      }
+
+      &:hover {
+        color: $color_05;
+
+        &:before {
+
+          width: 40%;
+
+        }
+      }
+
+
+      &.active {
+        color: $color_05;
+
+        &:before {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .header_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_05;
+
+
+
+    span {
+      display: block;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      align-items: flex-end;
+    }
+
+    .num {
+      font-size: $base_fs + 2px;
+      margin-bottom: 5px;
+
+    }
+
+    .txt {
+      font-size: $sm_fs + 2px;
+    }
+
+    .icm {
+      margin-left: 10px;
+      font-size: $md_fs - 4px;
+      @include trans();
+      &:hover {
+        color: $color_02;
+      }
+    }
+  }
+}
+
+
+//MOBILE NAV BTN
+.nav_button {
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  @include screen(1180px) {
+    box-shadow: none;
+  }
+  @include screen(1024px) {
+    height: 40px;
+    width: 40px;
+  }
+
+  .ham {
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    cursor: pointer;
+
+    &.active {
+      .hamburger {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+
+        &:before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          top: 0;
+          transform: rotate(135deg);
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .hamburger {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 25px;
+      height: 5px;
+      position: absolute;
+      background: #000;
+      transition: 0.5s;
+
+      &:before {
+        top: -9px;
+      }
+
+      &:after {
+        top: 9px;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 5px;
+        background: #faf;
+        transition: 0.5s;
+      }
+    }
+  }
+}

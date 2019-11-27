@@ -1,0 +1,106 @@
+@import "../abstracts/var";
+@import "../abstracts/mixines";
+
+body {
+  font-family: $baseFontFamily;
+  font-size: $base_fs;
+  font-weight: $fontRegular;
+  color: $black;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+label {
+  display: block;
+}
+
+.cnt_full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+button, input, textarea {
+  font-family: $baseFontFamily;
+}
+
+.cnt {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.ttl_l1 {
+  font-family: $fontMerriweather;
+  font-weight: $fontBold;
+  @include fs($lg_fs, $md_fs);
+}
+
+.ttl_l2 {
+  font-family: $fontMerriweather;
+  font-weight: $fontBold;
+  @include fs($md_fs, $md_fs - 6px);
+}
+
+h3, .ttl_l3 {
+  font-family: $fontMerriweather;
+  font-weight: $fontBold;
+  @include fs($md_fs - 6px, $md_fs - 6px);
+}
+
+
+.text__blk {
+  p {
+    color: $color_grey_dark;
+  }
+  h2, h3, h4, h5, h6 {
+    font-family: $fontMerriweather;
+    font-weight: $fontBold;
+    color: $color_base;
+  }
+
+  h2 {
+
+    @include fs($md_fs, $md_fs - 6px);
+  }
+
+  h3 {
+
+    @include fs($md_fs - 6px, $md_fs - 6px);
+  }
+
+  h4 {
+    @include fs($base_fs + 6px, $base_fs + 6px);
+
+
+  }
+
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

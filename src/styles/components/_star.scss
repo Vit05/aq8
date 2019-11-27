@@ -1,0 +1,51 @@
+:root {
+  --logo-width: 22%;
+}
+
+.star__blk {
+  background-color: pink;
+  width: var(--logo-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .rate {
+    font-weight: 300;
+    font-size: ($lg_fs * 2) - 8px;
+    line-height: 73px;
+    text-align: center;
+
+    .rate_of {
+      margin-bottom: 10px;
+      font-weight: $fontMedium;
+      font-size: $sm_fs - 3px;
+      line-height: 1.2;
+      letter-spacing: 1.125px;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  .title_row {
+    text-align: center;
+  }
+}
+
+.title_row {
+  font-weight: $fontMedium;
+  font-size: $sm_fs - 3px;
+  line-height: 1.2;
+  letter-spacing: 1.125px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: $base_fs + 4px;
+    font-weight: $fontLight;
+    margin-right: 10px;
+  }
+}

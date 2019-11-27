@@ -1,0 +1,78 @@
+.textarea_group {
+  max-width: 480px;
+
+  &.icon_group{
+    position: relative;
+
+    .icm{
+      position: absolute;
+      left: 24px;
+      top: 37px;
+      color: blue;
+      @include icm_fs($base_fs + 4px);
+    }
+
+    textarea{
+      padding-left: 60px;
+    }
+  }
+
+  &.is-invalid {
+    textarea {
+      border-color: $invalid;
+    }
+
+    .invalid {
+      margin-top: 4px;
+      display: block;
+      color: $invalid;
+      font-size: $sm_fs;
+    }
+  }
+
+  .group_label {
+    font-weight: $fontMedium;
+    font-size: $sm_fs;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  textarea {
+    height: 60px;
+    cursor: pointer;
+    padding: 12px 15px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: grey;;
+    width: 100%;
+    min-height: 170px;
+    resize: vertical;
+    font-size: $base_fs;
+    border: 1px solid rgba(74, 144, 226, 0.166139);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &:focus, &:active {
+      outline: 0;
+      border-color: blue;
+    }
+
+    &::placeholder {
+      color: var(--input-placeholder-color);
+      opacity: 1;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-text-fill-color: grey;;
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+
+  }
+}

@@ -1,0 +1,65 @@
+
+
+@mixin trans($prop: all){
+  transition: $prop ease-in-out .3s;
+}
+
+@mixin screen($width: 767px) {
+  @media screen and (max-width: $width){@content}
+}
+
+@mixin flexCenter(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin icm_fs($size:$base_fs){
+  &:before{
+    font-size: $size;
+  }
+}
+@mixin fs( $max-font-size: 21px, $min-font-size: $baseFontSize, $lower-range: 375px, $upper-range: 1300px) {
+
+  font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+  @media screen and (min-width: $upper-range){
+    font-size: $max-font-size;
+  }
+}
+
+
+
+@mixin titles(){
+  h2, h3, h4, h5, h6, .title_l2 {
+    letter-spacing: -1.5px;
+    font-weight: $fontBlack;
+    @include fs($md_fs, $md_fs - 12px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  p:not(.title_l2) {
+    font-weight: $fontMedium;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    @include fs($base_fs, $sm_fs + 2px);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  ul:not(.bullet) {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 30px 0;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin: 30px 0;
+  }
+}

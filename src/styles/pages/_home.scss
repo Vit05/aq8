@@ -1,0 +1,237 @@
+.home__page {
+
+
+  .main__blk {
+    margin-bottom: 30px;
+    //background: linear-gradient(90deg, rgba($color_03, 0.8) 0,
+    //        rgba($color_03, .9) 40%, rgba($color_03, 1) 80%), url('../images/bg/19.jpg');
+    //background-color: $color_01;
+    background: linear-gradient(90deg, rgba($color_01, 0.85) 0,
+            rgba($color_01, .95) 40%, rgba($color_01, 1) 80%), url('../images/bg/22.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: $color_05;
+
+    .cnt {
+      width: 100%;
+      min-height: calc(80vh);
+      background-size: contain;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      background-image: url('../images/bg/011.png');
+    }
+
+    .ttl_l1 {
+      font-size: 60px;
+      white-space: pre-line;
+      line-height: 1.2;
+    }
+
+    .sub_ttl {
+      font-size: 42px;
+
+      font-weight: $fontBold;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+      span {
+        display: block;
+        color: $color_02;
+      }
+    }
+
+
+    .desc__blk {
+      width: 60%;
+    }
+
+    .pic__blk {
+      width: 40%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+
+  }
+
+  .what_is__blk {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .cnt {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .title__blk {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      width: 100%;
+      text-align: center;
+
+      p {
+        white-space: pre-line;
+      }
+    }
+
+    .desc__blk {
+      width: 50%;
+      padding-left: 50px;
+
+      p {
+        margin-bottom: 30px;
+        line-height: 1.3;
+      }
+    }
+
+    .pic__blk {
+      width: 50%;
+    }
+
+    .benefits__blk {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 1.2;
+
+        .icm {
+          color: $color_02;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: $lg_fs;
+          flex: 0 0 50px;
+        }
+      }
+    }
+  }
+
+
+  .how_to__blk {
+    padding-top: 30px;
+    padding-bottom: 30px;
+.title__blk{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+    .step_list {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        display: flex;
+
+        line {
+          stroke: rgba($color_04, 0.1);
+        }
+
+        &:nth-of-type(odd) {
+          flex-direction: row-reverse;
+          .desc__blk{
+            //background-color: #cdfa3d;
+            align-items: flex-end;
+            text-align: right;
+
+          }
+        }
+
+        &:nth-of-type(1) {
+          .step__1 {
+            stroke: $color_02;
+          }
+        }
+
+        &:nth-of-type(2) {
+          .step__1, .step__1, .step__2 {
+            stroke: $color_02;
+          }
+        }
+
+        &:nth-of-type(3) {
+          .step__1, .step__2, .step__3 {
+            stroke: $color_02;
+          }
+        }
+
+        &:nth-of-type(4) {
+          .step__1, .step__2, .step__3, .step__4 {
+            stroke: $color_02;
+          }
+        }
+
+        &:nth-of-type(5) {
+          .step__1, .step__2, .step__3, .step__4, .step__5 {
+            stroke: $color_02;
+          }
+        }
+
+
+        .pic__blk {
+          width: 45%;
+          height: 450px;
+          img{
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .num__blk {
+          width: 10%;
+          align-self: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 25px;
+          padding-bottom: 25px;
+          //outline: 1px solid red;
+          position: relative;
+
+          .num {
+            color: $color_02;
+            position: absolute;
+            font-size: $md_fs - 12px;
+            font-weight: $fontBold;
+            left: 50%;
+            top: 55%;
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+
+        .desc__blk {
+          width: 45%;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h3{
+            margin-bottom: 15px;
+            display: block;
+          }
+          p{
+            font-size: $base_fs + 2px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}
